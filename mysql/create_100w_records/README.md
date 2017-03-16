@@ -51,7 +51,7 @@ END //
 ```
 
 * Create procedure for insert data into `vote_record_memory` table:
-```spl
+```sql
 -- 创建插入数据的存储过程
 DROP PROCEDURE IF EXISTS `add_vote_record_memory` //
 CREATE PROCEDURE `add_vote_record_memory`(IN n INT)
