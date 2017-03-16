@@ -1,7 +1,7 @@
 
 ## Create tables and procedure
 
-* Create vote record memory table;
+* Create vote record memory table:
 ```sql
 DROP TABLE IF EXISTS `vote_record_memory`;
 CREATE TABLE `vote_record_memory` (
@@ -16,7 +16,7 @@ CREATE TABLE `vote_record_memory` (
 ) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8;
 ```
 
-* Create vote record table;
+* Create vote record table:
 ```sql
 DROP TABLE IF EXISTS `vote_record`;
 CREATE TABLE `vote_record` (
@@ -31,7 +31,7 @@ CREATE TABLE `vote_record` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='投票记录表';
 ```
 
-* Create rand string generate function
+* Create rand string generate function:
 ```sql
 -- 创建生成长度为n的随机字符串的函数
 DELIMITER // -- 修改MySQL delimiter：'//'
@@ -50,7 +50,7 @@ BEGIN
 END //
 ```
 
-* Create procedure for insert data into `vote_record_memory` table
+* Create procedure for insert data into `vote_record_memory` table:
 ```spl
 -- 创建插入数据的存储过程
 DROP PROCEDURE IF EXISTS `add_vote_record_memory` //
